@@ -1,7 +1,6 @@
-import csv
 import json
 
-raw_data_path = 'maximus_294619_etl_production_events.json'
+raw_data_path = ''
 
 with open(raw_data_path, 'r') as file:
     raw_data = json.load(file)
@@ -25,7 +24,7 @@ for my_dict in list_of_dicts:
     variables.append(my_dict.keys())
 check = list(variables)
 values_list = [list(keys) for keys in list_of_dicts]
-csv_path = 'King.csv'
+csv_path = 'name_of_csv_file'
 values = ''
 for i in range(0,20):
     if i == 19:
